@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}Logged Out{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+        
+        <!-- Wrap the message in a light-themed card -->
+        <div class="card shadow-lg" data-bs-theme="light">
+            <div class="card-body p-4 p-md-5 text-center">
+                
+                <h2 class="card-title text-center mb-4 text-dark">
+                    You have been logged out.
+                </h2>
+
+                <p class="text-dark">Thank you for visiting. You can log in again below.</p>
+
+                <div class="d-grid mt-4">
+                    <a href="{% url 'login' %}" class="btn btn-primary">Login Again</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
